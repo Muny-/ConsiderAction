@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <style type="text/css">
+            body {
+                background:black;
+            }
+        </style>
+
+        <script src="../assets/js/pixi.js" type="text/javascript"></script>
+
+        <script src="../assets/js/Tween.js" type="text/javascript"></script>
+
+        <!-- consts !-->
+        <script src="consts.js" type="text/javascript"></script>
+
+        <script src="engine.js" type="text/javascript"></script>
+
+        <!-- views !-->
+        <script src="views/titleView.js" type="text/javascript"></script>
+        <script src="views/creditsView.js" type="text/javascript"></script>
+        <script src="views/staticHUDView.js" type="text/javascript"></script>
+        <script src="views/presentLabView.js" type="text/javascript"></script>
+
+        <!-- game !-->
+        <script src="game.js" type="text/javascript"></script>
+
+        <script type="text/javascript">
+            window.onload=function() {
+                PIXI.loader.add(Object.values(RESOURCES)).load(initializeGame);
+            }
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
